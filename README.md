@@ -1,4 +1,4 @@
 f0nt dump
 -----
 
-Dump font from f0nt.com.
+Dump fonts from f0nt.com.
