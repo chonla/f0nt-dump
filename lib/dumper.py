@@ -83,7 +83,7 @@ class Dumper():
                 file_list = zip.namelist()
                 file_list = filter(lambda x: (
                     x[-4:].lower() == ".ttf") and (x[:1] != ".") and (x.find("/.") == -1), file_list)
-                zip.extractall('tmp/t/')
+                zip.extractall('tmp/t/', file_list)
             except RuntimeError:
                 if not os.path.exists('zip'):
                     os.makedirs('zip')
