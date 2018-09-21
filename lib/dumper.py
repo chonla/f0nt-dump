@@ -52,7 +52,7 @@ class Dumper():
     def err_log(self, txt):
         print txt
         stamp = datetime.now()
-        text_file = open("error_log.txt", "w+")
+        text_file = open("error_log.txt", "a+")
         text_file.write(stamp.strftime("%Y-%m-%d %H:%M:%S") + " - " + txt)
         text_file.close()
 
