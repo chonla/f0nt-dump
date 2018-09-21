@@ -41,7 +41,7 @@ class Dumper():
             trimmed_content = content.text[download_pos +
                                            len("<div id=\"download\">"):]
             result = re.search(
-                "<a href=\"(http:\/\/www\.f0nt\.com\/[^\"]+)\">", trimmed_content)
+                "<a href=\"(https:\/\/www\.f0nt\.com\/[^\"]+)\">", trimmed_content)
             if result:
                 font_url = result.group(1)
                 self.download_and_unpack(font_url, font_name)
