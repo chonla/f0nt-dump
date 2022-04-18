@@ -5,3 +5,4 @@ error_log.txt
 dump_stamp.txt
 lib/*.pyc
 .DS_Store
+lib/__pycache__/
